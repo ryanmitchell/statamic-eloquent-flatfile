@@ -28,10 +28,7 @@ return [
         'default' => [
             'driver' => 'local',
             'searchables' => 'all',
-            'fields' => ['title', 'ryan'],
-            'transformers' => [
-                'ryan' => \App\Transformer::class,
-            ]
+            'fields' => ['title', 'slug'],
         ],
 
         // 'blog' => [
