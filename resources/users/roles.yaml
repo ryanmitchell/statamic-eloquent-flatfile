@@ -1,0 +1,4 @@
+test_role:
+  title: 'Test role'
+  permissions:
+    - super

@@ -1,0 +1,56 @@
+title: Personnel
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: hidden
+          required: false
+      -
+        handle: first_name
+        field:
+          input_type: text
+          antlers: false
+          display: 'First name'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: last_name
+        field:
+          input_type: text
+          antlers: false
+          display: 'Last name'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: author
+        field:
+          mode: default
+          display: Author
+          type: users
+          icon: users
+          listable: hidden
+          instructions_position: above
+          read_only: false
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+          instructions_position: above
+          listable: hidden
+          read_only: false
+          generate: true
+          validate:
+            - 'unique_entry_value:{collection},{id},{site}'

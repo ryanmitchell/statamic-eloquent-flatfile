@@ -1,0 +1,54 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: study_date
+        field:
+          mode: range
+          time_enabled: false
+          time_seconds_enabled: false
+          full_width: false
+          inline: false
+          columns: 1
+          rows: 1
+          display: Date
+          type: date
+          icon: date
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
+          instructions: 'If you are currently studying use your expected completion date'
+      -
+        handle: taxonomy_terms_field
+        field:
+          mode: default
+          create: true
+          taxonomies:
+            - taxonomy_1
+          display: 'Taxonomy Terms Field'
+          type: terms
+          icon: taxonomy
+          listable: hidden
+          instructions_position: above
+          read_only: false
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+          validate:
+            - 'unique_entry_value:{collection},{id},{site}'
+title: Education

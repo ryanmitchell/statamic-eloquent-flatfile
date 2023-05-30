@@ -1,0 +1,29 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          display: Title
+          listable: true
+          validate:
+            - required
+          instructions: 'Usually a singular noun, like Editor or Admin.'
+      -
+        handle: handle
+        field:
+          type: slug
+          display: Handle
+          listable: true
+          validate:
+            - required
+          instructions: 'Handles are used to reference this role on the frontend. Cannot be easily changed.'
+      -
+        handle: super
+        field:
+          type: toggle
+          display: 'Super User'
+          listable: true
+          instructions: 'Super admins have complete control and access to everything in the control panel. Grant this role wisely.'

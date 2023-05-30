@@ -1,0 +1,22 @@
+{
+    "name": "thoughtco/eloquent-flatfile",
+    "autoload": {
+        "psr-4": {
+            "Thoughtco\\EloquentFlatfile\\": "src"
+        }
+    },
+    "require": {
+        "calebporzio/sushi": "*"
+    },
+    "extra": {
+        "statamic": {
+            "name": "Eloquent Flatfile",
+            "description": "Eloquent Flatfile addon"
+        },
+        "laravel": {
+            "providers": [
+                "Thoughtco\\EloquentFlatfile\\ServiceProvider"
+            ]
+        }
+    }
+}

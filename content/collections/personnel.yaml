@@ -1,0 +1,9 @@
+title: Personnel
+template: default
+layout: layout
+revisions: false
+title_format: '{last_name}-{first_name}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private

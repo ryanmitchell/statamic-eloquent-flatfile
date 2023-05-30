@@ -1,0 +1,8 @@
+title: 'Voucher form'
+email:
+  -
+    to: 'Balloo Inns'
+    from: info@ballooinns.com
+    reply_to: info@ballooinns.com
+    subject: 'Gift Voucher'
+    html: default

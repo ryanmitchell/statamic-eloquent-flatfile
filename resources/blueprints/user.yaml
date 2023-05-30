@@ -1,0 +1,17 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: email
+        field:
+          type: text
+          input_type: email
+          display: 'Email Address'
+          listable: true
+      -
+        handle: name
+        field:
+          type: text
+          display: Name
+          listable: true
